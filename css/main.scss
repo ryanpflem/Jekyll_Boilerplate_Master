@@ -4,6 +4,12 @@ sitemap: false
 @charset "utf-8";
 
 /*
+   Global
+   ========================================================================== */
+
+@import "base/base";
+
+/*
    Vendor
    ========================================================================== */
 
@@ -11,16 +17,10 @@ sitemap: false
 @import "vendor/magnific-popup/magnific-popup"; /* Magnific Popup lightbox */
 
 /*
-   Global
-   ========================================================================== */
-
-@import "base";
-
-/*
    Components
    ========================================================================== */
 
-@import "modules";
+@import "modules/modules";
 
 /*
    Page specific
@@ -29,18 +29,4 @@ sitemap: false
 // @import "page"; /* layout and styles that apply to posts and pages */
 // @import "archives"; /* archive pages (post/tag lists, etc) */
 
-
-
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
-}
 
