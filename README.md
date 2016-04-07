@@ -22,7 +22,7 @@ See a [live version](http://) hosted on GitHub.
 
 ## Getting Started
 
-So Simple takes advantage of Sass and data files to make customizing easier. These features require Jekyll 2.x and will not work with older versions of Jekyll.
+Boilerplate takes advantage of Sass and data files to make customizing easier. These features require Jekyll 2.x and will not work with older versions of Jekyll.
 
 To learn how to install and use this theme check out the [Setup Guide](http://) for more information.
 
