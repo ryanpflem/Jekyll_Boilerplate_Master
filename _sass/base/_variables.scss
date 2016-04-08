@@ -15,8 +15,8 @@ $bp-larger-than-desktophd : "min-width: 1200px" !default;
 //         padding-left: 1em;
 //     }
 // }
-@mixin media-query($bp-larger-than-mobile) {
-    @media screen and (max-width: $device) {
+@mixin media-query($device) {
+    @media screen and ($device) {
         @content;
     }
 }
@@ -24,7 +24,7 @@ $bp-larger-than-desktophd : "min-width: 1200px" !default;
 // Colors
 $light-grey: #e1e1e1 !default;
 $dark-grey: #333 !default;
-$black: #000 !default;
+$black: #222 !default;
 $white: #fff !default;
 $primary-color: #33c3f0 !default;
 $secondary-color: lighten($dark-grey, 13.5%) !default;
@@ -49,3 +49,5 @@ $column-margin: 4% !default; // space between columns
 
 // Misc
 $global-radius: 4px !default;
+$navBgColor: #00B7C8 !default;
+$navWidth: 240px !default;

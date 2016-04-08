@@ -10,9 +10,14 @@
 	<meta name="google-site-verification" content="{{ site.owner.google.verify }}">{% endif %}
 	{% if site.owner.bing-verify %}<meta name="msvalidate.01" content="{{ site.owner.bing-verify }}">{% endif %}
 
-	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+	
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+	
+	<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+
+	<!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png" />
 
 	<!-- Default Google Fonts -->
 	<link href='https://fonts.googleapis.com/css?family=Raleway:400,400italic,500,500italic,600,600italic,700,700italic,800,800italic|Source+Code+Pro:400,500,600|Volkhov' rel='stylesheet' type='text/css'>

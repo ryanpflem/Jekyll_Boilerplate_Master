@@ -8,12 +8,19 @@
     {% include header.html %}
 
     <div class="page-content">
-      <div class="wrapper">
+      <div class="container wrapper">
         {{ content }}
       </div>
     </div>
 
     {% include footer.html %}
+
+    <!-- Scripts for accessible mobile-first navigation -->
+    <div data-role="page" rel="external">
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/libs/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/libs/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/navigation.js"></script>
+    </div>
 
   </body>
 
