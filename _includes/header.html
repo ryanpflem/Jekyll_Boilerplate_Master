@@ -1,22 +1,20 @@
-
-<header role="banner" class="page-header" id="top">
+<header role="banner" class="site-header" id="top">
   <div class="container">
-    <div class="row">
-      <div class="five columns">
-        <h1 class="site-title"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
-        <p>{{site.tagline}}</p>
-      </div>
-      <div class="seven columns">        
-        <nav class="navigation-wrapper">
-          <ul>
-            {% for my_page in site.pages %}
-              {% if my_page.title %}
-                <li><a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
-              {% endif %}
-           {% endfor %}
-          </ul>
-       </nav>
-      </div>  
-    </div>
+    <nav>
+      <ul>
+        <li><a href="{{site.baseurl}}/index.html" title="Home">Home</a></li>
+        {% for page in site.pages %}
+          {% if page.title %}            
+            <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}" title="{{ page.title }}">{{ page.title }}</a></li>
+          {% endif %}
+       {% endfor %}
+      </ul>
+    </nav>
+  </div>
+  <div class="container">
+    <h1 class="site-title">{{ site.title }}</h1>
+    <p class="site-tagline">{{ site.tagline }}</p>
   </div>
 </header>
+
+

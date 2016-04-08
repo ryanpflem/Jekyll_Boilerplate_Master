@@ -1,0 +1,29 @@
+.site-title {
+    margin-top: 25px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.site-tagline {
+	text-align: center;
+}
+
+.post-list li {
+	list-style: none;
+}
+
+
+
+
+
+
+
+@include media-query($bp-larger-than-tablet) {
+	.site-title {
+		text-align: left;
+	}
+
+	.site-tagline {
+		text-align: left;
+	}
+}
