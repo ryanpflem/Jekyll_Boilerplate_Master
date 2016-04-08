@@ -12,12 +12,12 @@ nav {
         padding: 0;
         margin: 0 auto;
         display: block;
-        border: 1px solid $light-grey;
+        border-bottom: 1px solid $light-grey;
     }
 
     li a {
         display: block;
-        padding: 2rem;        
+        padding: 1.5rem;        
         color: $dark-grey;
         font-size: 175%;
     }
