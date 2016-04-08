@@ -6,9 +6,9 @@ A simple, responsive, boilerplate for your Jekyll powered blog.
 
 * Compatible with Jekyll 3 and GitHub Pages.
 * Developed under html5 and css3 standards.
-* Desgined with the [skeleton](https://getskeleton.com) boilerplate.
+* Desgined with the [skeleton](http://getskeleton.com) boilerplate.
 * Responsive templates. Looks good on mobile, tablet, and desktop devices.
-* Font Awesome sass library included.
+* Font Awesome library included.
 * Gracefully degrading in older browsers. Compatible with Internet Explorer 9+ and all modern browsers.
 * Minimal embellishments and subtle animations.
 * Optional large feature images for posts and pages.
