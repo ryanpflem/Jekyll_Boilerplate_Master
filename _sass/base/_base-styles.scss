@@ -30,6 +30,16 @@ a {
 
 // Misc
 //––––––––––––––––––––––––––––––––––––––––––––––––––
+blockquote {
+  border-left: 0.5rem solid $primary-color;
+  padding: 1rem;
+  padding-left: 2rem;
+  background: lighten($light-grey, 5%);
+  color: $black;
+}
+
+// Misc
+//––––––––––––––––––––––––––––––––––––––––––––––––––
 
 hr {
   margin-top: 3rem;

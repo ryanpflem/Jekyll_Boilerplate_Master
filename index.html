@@ -4,11 +4,13 @@ layout: default
 
 <div class="home">
   <div class="row">
-    <div class="four columns">
+    <div class="four columns divider">
+      <h1 class="site-title">{{ site.title }}</h1>
+      <p class="site-tagline">{{ site.tagline }}</p>
       <h1 class="">Archive</h1>
     </div>
     <div class="eight columns">
-      <h1 class="">Posts</h1>
+      <h1 class="">Recent Posts</h1>
       <ul class="post-list">
         {% for post in site.posts %}
           <li>
