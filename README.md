@@ -2,11 +2,15 @@
 
 A simple, responsive, boilerplate for your Jekyll powered blog.
 
+# Skekyll - Jekyll Boilerplate
+
+A simple, responsive, boilerplate for your Jekyll powered blog using [Skeleton](http://getskeleton.com) theme.
+
 ## Notable features:
 
 * Compatible with Jekyll 3 and GitHub Pages.
 * Developed under html5 and css3 standards.
-* Desgined with the [skeleton](http://getskeleton.com) boilerplate.
+* Desgined with the [Skeleton](http://getskeleton.com) boilerplate.
 * Responsive templates. Looks good on mobile, tablet, and desktop devices.
 * Font Awesome library included.
 * Gracefully degrading in older browsers. Compatible with Internet Explorer 9+ and all modern browsers.
