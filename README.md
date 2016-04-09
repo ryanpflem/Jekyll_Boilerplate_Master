@@ -1,7 +1,3 @@
-# Jekyll Boilerplate/Skeleton
-
-A simple, responsive, boilerplate for your Jekyll powered blog.
-
 # Skekyll - Jekyll Boilerplate
 
 A simple, responsive, boilerplate for your Jekyll powered blog using [Skeleton](http://getskeleton.com) theme.
