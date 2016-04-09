@@ -1,6 +1,31 @@
 <footer class="site-footer">
   <div class="container">
     <div class="row">
+      <div class="contact">
+        <div class="one-half column">
+          <h4 class="footer-heading">Contact</h4>
+          <ul class="contact-list">
+            <li><a href="mailto:{{ site.owner.email }}">{{ site.owner.name }}</a></li>
+          </ul>
+        </div>
+        <div class="one-half column">
+          <div class="footer-menu">
+            <h4 class="footer-heading">Menu</h4>
+            <ul>
+              <li><a href="{{site.baseurl}}/index.html" title="Home">Home</a></li>
+              {% for page in site.pages %}
+                {% unless page.exclude %}
+                  {% if page.title %}            
+                    <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}" title="{{ page.title }}">{{ page.title }}</a></li>
+                  {% endif %}
+                {% endunless %}
+             {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>    
+    <div class="row">
       <div class="column">
         <div class="social-icons">
           {% if site.owner.twitter %}<a href="https://twitter.com/{{ site.owner.twitter }}" title="{{ site.owner.name}} on Twitter" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>{% endif %}
@@ -18,33 +43,9 @@
         </div>
       </div>
     </div>
-
-    <div class="row">
-      <div class="one-half column">
-        <h4 class="footer-heading">Contact</h4>
-        <ul class="contact-list">
-          <li><a href="mailto:{{ site.owner.email }}">{{ site.owner.name }}</a></li>
-        </ul>
-      </div>
-      <div class="one-half column">
-        <div class="footer-menu">
-          <h4 class="footer-heading">Menu</h4>
-          <ul>
-            <li><a href="{{site.baseurl}}/index.html" title="Home">Home</a></li>
-            {% for page in site.pages %}
-              {% if page.title %}            
-                <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}" title="{{ page.title }}">{{ page.title }}</a></li>
-              {% endif %}
-           {% endfor %}
-          </ul>
-        </div>
-      </div>
-    </div>
-
     <div class="row">
       <div class="column copyright">
         {% if site.owner.google.ad-client and site.owner.google.ad-slot %}{% include ad-footer.html %}{% endif %}
-
         <span>&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="http://getskeleton.com" rel="nofollow">Skeleton Theme</a>.</span>
       </div>
     </div>
