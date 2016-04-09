@@ -1,3 +1,18 @@
+.menu-site-title {
+       
+    a {
+        font-weight: 500;
+        font-size: 3.25rem;
+        text-shadow: .1em .1em rgba(0, 0, 0, 0.3);
+    }
+
+    a:hover {
+        background-color: transparent; 
+        text-decoration: none;
+        color: $primary-color;
+    }
+}
+
 nav {
     margin: 2rem 0;
     text-align: center;
@@ -30,6 +45,15 @@ nav {
 }
 
 @include media-query($bp-larger-than-tablet) {
+
+    .menu-site-title {        
+        padding: 0;
+        float: left;
+
+        a {
+            padding: 0;
+        }
+    }
 
     nav {
         border-bottom: 1px solid $border-color;

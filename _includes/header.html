@@ -2,7 +2,7 @@
   <div class="container">
     <nav>
       <ul>
-        <li><a href="{{site.baseurl}}/index.html" title="Home">Home</a></li>
+        <li class="menu-site-title"><a class="" href="{{site.baseurl}}/index.html" title="Home">{{ site.title }}</a></li>        
         {% for page in site.pages %}
           {% if page.title %}            
             <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}" title="{{ page.title }}">{{ page.title }}</a></li>
