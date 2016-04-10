@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Markdown Basics"
-date:   2015-06-29
+title: "Markdown Basics"
+date: 2015-06-29
+categories: blog
 tags: [jekyll, markdown, html]
 ---
 

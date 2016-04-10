@@ -1,7 +1,9 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2016-04-08
+title: "Welcome to Jekyll!"
+date: 2016-04-08
+categories: blog
+tags: [jekyll, web design, blogging, yaml, liquid]
 ---
 
 Jekyll bills itself as “a simple, blog-aware, static site generator.” It takes source files like templates, stylesheets, includes, and posts and uses them to generate a website that can then be hosted on your server of choice. This means that the entire website is generated at once, and visitors are simply served static files. This can be much faster than blogging platforms like WordPress, which use a CMS to generate pages as they’re requested. This blog, for example, was generated from a series of templates, posts, html snippets, and CSS using Jekyll.

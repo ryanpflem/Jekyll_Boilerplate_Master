@@ -21,6 +21,8 @@
 	text-shadow: .1em .1em rgba(0, 0, 0, 0.3);
 }
 
+// Page footer styles---------------------------
+
 .site-footer {
 	margin: 0 auto;
 	padding: 2rem;	
@@ -58,6 +60,36 @@ footer {
 .copyright{
 	margin: 1rem;
 }
+
+// Custom 404 styles----------------------------
+
+.search-goog {
+	list-style: none;
+
+	form {
+		margin-top: 2.5rem;
+	}
+
+	input#goog-wm-qt {
+		margin-right: 1rem;
+	}
+
+	input#goog-wm-sb {
+		color: #fff;
+    background-color: $primary-color;
+    border-color: $primary-color;
+
+    &:hover {
+    	color: #fff;
+		  background-color: $link-color;
+		  border-color: $link-color;
+    }
+	}
+}
+
+
+
+// Media queries-------------------------------
 
 @include media-query($bp-larger-than-phablet) {
 	.footer-menu {
