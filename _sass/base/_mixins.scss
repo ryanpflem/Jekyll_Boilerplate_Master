@@ -1,4 +1,13 @@
 
+// Modern micro clearfix provides an easy way to contain floats without adding additional markup.
+@mixin clearfix {
+  &:after {
+    content:"";
+    display:table;
+    clear:both;
+  }
+}
+
 // Box-sizing mixin
 
 @mixin box-sizing($box-model) {

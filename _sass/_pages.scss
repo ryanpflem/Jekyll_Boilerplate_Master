@@ -1,0 +1,171 @@
+// Styles specific to pages
+
+.site-header {
+	margin-bottom: 2rem;
+}
+
+.page-content {
+	margin-bottom: 2rem;
+}
+
+.home {
+
+	.column,
+	.columns {		
+		float: none;
+		margin: 0 auto;
+		width: 100%;
+	}
+}
+
+.site-title {
+	font-weight: 500;
+	text-shadow: .1em .1em rgba(0, 0, 0, 0.3);
+}
+
+// Pagination Link Styles---------------------------
+
+.post-list li {
+	list-style: none;
+}
+
+.taglist time {
+	display: inline;
+	font-size: 1em;
+}
+
+.pagination {
+	width: 100%;
+	font-size: 1.2em;
+}
+
+.prevLink {
+	position:relative;
+	float: left;
+	width: 50%;
+}
+
+.nextLink {
+
+	float: right;
+	width: 50%;
+	text-align: right;
+}
+
+.previous:before {
+
+	font-family: FontAwesome;
+	content: '\f177\0020';
+}
+
+.next:after {
+	font-family: FontAwesome;
+	content: '\0020\f178';	
+}
+
+// Page footer styles---------------------------
+
+.site-footer {
+	margin: 0 auto;
+	padding: 2rem;	
+	background: $dark-grey;
+
+	li {
+		list-style: none;
+	}
+}
+
+footer {
+	p,
+	span {
+		color: $white;
+	}
+}
+
+.footer-heading {
+	color: $white;
+}
+
+.contact {
+	margin: 1rem;
+}
+
+.social-icons {
+	margin: 1rem;
+	text-align: center;
+
+	.fa-2x {
+		padding: 3px;
+	}
+}
+
+.copyright{
+	margin: 1rem;
+}
+
+// Custom 404 styles----------------------------
+
+.search-goog {
+	list-style: none;
+
+	form {
+		margin-top: 2.5rem;
+	}
+
+	input#goog-wm-qt {
+		margin-right: 1rem;
+	}
+
+	input#goog-wm-sb {
+		color: #fff;
+    background-color: $primary-color;
+    border-color: $primary-color;
+
+    &:hover {
+    	color: #fff;
+		  background-color: $link-color;
+		  border-color: $link-color;
+    }
+	}
+}
+
+// Media queries-------------------------------
+
+@include media-query($bp-larger-than-phablet) {
+	.footer-menu {
+		float: right;
+	}
+}
+
+@include media-query($bp-larger-than-tablet) {
+	.site-header {
+		padding: 2rem;
+	}
+
+	.home {
+
+		.column,
+		.columns {			
+			float: left;
+		}
+
+		.four {
+			width: grid-column-width(4);
+		}
+
+		.eight {
+			margin-left: 4%;
+			width: grid-column-width(8);
+		}
+
+		.site-title,
+		.site-tagline,
+		.archive-list {
+			padding-right: 1rem;
+		}
+
+		.divider {
+			border-right: 1px solid $border-color;
+		}
+	}
+}
