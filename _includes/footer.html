@@ -12,7 +12,7 @@
           <div class="footer-menu">
             <h4 class="footer-heading">Menu<i class="fa fa-bars"></i></h4>
             <ul>
-              <li><a href="{{site.baseurl}}/index.html" title="Home">Home</a></li>
+              <li><a href="{{ "/index.html" | prepend: site.baseurl }}" title="Home">Home</a></li>
               {% for link in site.data.navigation %}                
                 {% if link.url contains 'http' %}
                     {% assign domain = '' %}

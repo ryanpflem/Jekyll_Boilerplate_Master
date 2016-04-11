@@ -2,7 +2,7 @@
   <div class="container">
     <nav>
       <ul>
-        <li class="menu-site-title"><a href="{{ site.baseurl }}/index.html" title="Home">{{ site.title }}</a></li>
+        <li class="menu-site-title"><a href="{{ "index.html" | prepend: site.baseurl }}" title="Home">{{ site.title }}</a></li>
         {% for link in site.data.navigation %}
           {% if link.url contains 'http' %}
               {% assign domain = '' %}
