@@ -28,6 +28,8 @@ Below are some resources that I found extremely helpful in learning and maximizi
 [Creating Dynamic Menus in Jekyll](http://thinkshout.com/blog/2014/12/creating-dynamic-menus-in-jekyll/ "Creating Dynamic Menus in Jekyll")
 : Article by ThinkShout on using URLs to generate intellegent dynamic menus.
 
+---
+
 ### Markdown
 
 [Daring Fireball](http://daringfireball.net/projects/markdown/syntax "markdown syntax")
@@ -36,6 +38,7 @@ Below are some resources that I found extremely helpful in learning and maximizi
 [Kramdown Quick Reference](http://kramdown.gettalong.org/quickref.html “kramdown quick reference") 
 : Quick reference guide for Kramdown, Jekyll’s current default Markdown rendering engine. Features code examples and description of common formatting tasks.  
 
+---
 
 ### Liquid
 
@@ -48,16 +51,21 @@ Below are some resources that I found extremely helpful in learning and maximizi
 [Shopify Theme Guides](https://docs.shopify.com/themes/liquid-documentation/basics "Shopify Theme Guides")
 : Although largely focused on Shopify, provides a nice syntax reference for Liquid.
 
+---
 
 ### YAML
 
 [Yaml.org](http://yaml.org/ "yaml  homepage")
 : YAML.org home page. Links to specifications, related projects, and news. Although fairly technical, specifications provide a nice syntax resource.
 
+---
+
 ### Github
 
 [Github Pages Gem](https://github.com/github/pages-gem/blob/master/lib/github-pages.rb "Github Pages Gem")
 : Part of the Gihub repository. Allows you to track the latest versions of Jekyll components within Github so that you can stay current if using Github for deployment. 
+
+---
 
 ### Deployment
 

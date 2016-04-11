@@ -40,7 +40,7 @@ categories
 tags
 : Similar to categories, you can apply a single tag or multiples tags in a YAML list or a space-separated string. Although posts can be organized and sorted by tags, they can’t be used for permalinks like categories. 
 
-###Custom variables
+### Custom variables
 
 In addition to the predefined Global Variables, you can create any custom variable you want. That variable can then be accessed by any page or post that uses that content. 
 
@@ -77,7 +77,7 @@ permalink: /tags/:title
 
 The rest of the file could be empty and Jekyll would dynamically generate the page based on the tag name.
 
-###SASS and CoffeeScript
+### SASS and CoffeeScript
 
 Jekyll provides built-in support for Sass and CoffeeScript, but won’t process those files automatically. To enable those files for processing, add an empty front matter region to the top of the page:
 

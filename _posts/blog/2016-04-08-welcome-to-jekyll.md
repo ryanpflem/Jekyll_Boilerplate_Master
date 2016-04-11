@@ -39,15 +39,15 @@ The **_config.yml** file is a YAML file that contains the overall site configura
 
 In addition to the Liquid tags, Jekyll uses YAML front matter to guide the creation of pages. A post, for example, might have this YAML front matter at the top of the page:
 
----
+{% highlight yaml %}
 
+---
 layout: post
-
 title: "My First Post"
-
 category: jekyll
-
 ---
+
+{% endhighlight %}
 
 This tells Jekyll to use the “post” template to assemble the page, and assigns the ‘title’ and ‘category’ variables that can be used on that page or throughout the site. Jekyll will process any file that contains YAML front matter. The front matter must be the first thing in the file and must take the form of valid YAML set between triple-dashed lines. It can contain any of the predefined global variables such as layout, permalink, or category or any custom variable you wish to create. If you wished to display the authors name, for example, you could add author: ‘author’s name’ to the front matter and then reference that in your templates using {{page.author}}.
 

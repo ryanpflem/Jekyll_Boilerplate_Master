@@ -1,27 +1,19 @@
 <!DOCTYPE html>
 <html>
-
   <!-- Head -->
   {% include head.html %}
-
   <body>
-
     <!-- Header -->
     {% include header.html %}
-
     <!-- Page Content -->
-    <main class="page-content">
+    <main class="all-page-content {% if page.title == nil %}home{% else %}{{ page.title | downcase | replace: ' ','-' }}{% endif %}">
       <div class="container">
         {{ content }}
       </div>
     </main>
-
     <!-- Footer -->
     {% include footer.html %}
-
     <!-- Scripts -->
     {% include scripts.html %}
-
   </body>
-
 </html>

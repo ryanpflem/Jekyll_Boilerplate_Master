@@ -3,9 +3,11 @@ layout: page
 title: About
 ---
 
-# Skekyll - Jekyll Boilerplate
+## Skekyll - Jekyll Boilerplate
 
-A simple, responsive, boilerplate for your Jekyll powered blog using [Skeleton](http://getskeleton.com) theme.
+A simple, responsive, boilerplate for your Jekyll powered blog using the [Skeleton](http://getskeleton.com) theme.
+
+---
 
 ## Notable features:
 
