@@ -12,6 +12,7 @@
           <div class="footer-menu">
             <h4 class="footer-heading">Menu<i class="fa fa-bars"></i></h4>
             <ul>
+<<<<<<< HEAD
               <li><a href="{{site.baseurl}}/index.html" title="Home">Home</a></li>
               {% for link in site.data.navigation %}                
                 {% if link.url contains 'http' %}
@@ -21,6 +22,12 @@
                   {% else %}
                     {% assign domain = site.url %}
                 {% endif %}
+=======
+              <li><a href="{{ "/index.html" | prepend: site.baseurl }}" title="Home">Home</a></li>
+              {% for link in site.data.navigation %}
+          {% if link.url contains 'http' %}{% assign domain = site.url %}          <
+          {% else %}{% assign domain = site.baseurl %}{% endif %}
+>>>>>>> gh-pages
                 <li><a class="page-link" href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}>{% if link.title contains 'Tags' %}Archives{% else %}{{ link.title }}{% endif %}</a></li>                
               {% endfor %}
             </ul>

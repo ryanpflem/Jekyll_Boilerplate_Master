@@ -4,4 +4,9 @@ _site
 *.sublime-workspace
 node_modules
 .sass-cache
+<<<<<<< HEAD
 .jekyll-metadata
+=======
+.jekyll-metadata
+README.md
+>>>>>>> gh-pages

@@ -2,6 +2,7 @@
   <div class="container">
     <nav>
       <ul>
+<<<<<<< HEAD
         <li class="menu-site-title"><a href="{{ site.baseurl }}/index.html" title="Home">{{ site.title }}</a></li>
         {% for link in site.data.navigation %}
           {% if link.url contains 'http' %}
@@ -12,6 +13,13 @@
               {% assign domain = site.url %}
           {% endif %}
           <li><a class="page-link" href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}>{% unless page.exclude %}{% if link.title contains 'Tags' %}Archives{% else %}{{ link.title }}{% endif %}{% endunless %}</a></li>
+=======
+        <li class="menu-site-title"><a href="{{ "/index.html" | prepend: site.baseurl }}" title="Home">{{ site.title }}</a></li>
+        {% for link in site.data.navigation %}
+          {% if link.url contains 'http' %}{% assign domain = site.url %}
+          {% else %}{% assign domain = site.baseurl %}{% endif %}
+        <li><a class="page-link" href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}>{% unless page.exclude %}{% if link.title contains 'Tags' %}Archives{% else %}{{ link.title }}{% endif %}{% endunless %}</a></li>
+>>>>>>> gh-pages
         {% endfor %}
       </ul>
     </nav>
