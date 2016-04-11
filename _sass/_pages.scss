@@ -1,18 +1,33 @@
 // Styles specific to pages
+// -----------------------------------------------
 
 .site-header {
 	margin-bottom: 2rem;
+
+	@include media-query($bp-larger-than-tablet) {
+		padding: 2rem;
+	}
 }
 
 .all-page-content {
 		margin-bottom: 2rem;
 }
 
-.page-content {	
-	margin-bottom: 2rem;
+.page-title {
+	font-weight: 500;
+	text-shadow: .1em .1em rgba(0, 0, 0, 0.3);
 }
 
-.home {
+.page-content {	
+	margin-bottom: 2rem;
+
+	@include media-query($bp-larger-than-tablet) {
+		margin-left: 2.5rem;
+	}
+}
+
+.home,
+.blog {
 	.column,
 	.columns {		
 		float: none;
@@ -49,9 +64,42 @@
 		    border-bottom: 1px dotted $dark-grey;
 		  }
 	}
+
+	@include media-query($bp-larger-than-tablet) {
+		.column,
+		.columns {			
+			float: left;
+		}
+
+		.archive-list {	
+			li {
+				float: none;
+			}			
+		}
+
+		.four {
+			width: grid-column-width(4);
+		}
+
+		.eight {
+			margin-left: 4%;
+			width: grid-column-width(8);
+		}
+
+		.site-title,
+		.site-tagline,
+		.archive-list {
+			padding-right: 1rem;
+		}
+
+		.divider {
+			border-right: 1px solid $border-color;
+		}
+	}
 }
 
-// Pagination Link Styles---------------------------
+// Pagination Link Styles
+// -----------------------------------------------
 
 .post-list {
 
@@ -104,7 +152,8 @@
 	content: '\0020\f178';	
 }
 
-// Page footer styles---------------------------
+// Page footer styles
+// -----------------------------------------------
 
 .site-footer {
 	margin: 0 auto;
@@ -122,6 +171,11 @@
 
 .footer-heading {
 	color: $white;
+
+	i {
+		padding: 4px 6px;
+		font-size: 75%;
+	}
 }
 
 .contact {
@@ -145,7 +199,14 @@
 	margin: 1rem;
 }
 
-// Custom 404 styles----------------------------
+@include media-query($bp-larger-than-phablet) {
+	.footer-menu {
+		float: right;
+	}
+}
+
+// Custom 404 styles
+// -----------------------------------------------
 
 .search-goog {
 	list-style: none;
@@ -168,56 +229,5 @@
 		  background-color: $link-color;
 		  border-color: $link-color;
     }
-	}
-}
-
-// Media queries-------------------------------
-
-@include media-query($bp-larger-than-phablet) {
-	.footer-menu {
-		float: right;
-	}
-}
-
-@include media-query($bp-larger-than-tablet) {
-	.site-header {
-		padding: 2rem;
-	}
-
-	.page-content {
-		margin-left: 2.5rem;
-	}
-
-	.home {
-
-		.column,
-		.columns {			
-			float: left;
-		}
-
-		.archive-list {	
-			li {
-				float: none;
-			}			
-		}
-
-		.four {
-			width: grid-column-width(4);
-		}
-
-		.eight {
-			margin-left: 4%;
-			width: grid-column-width(8);
-		}
-
-		.site-title,
-		.site-tagline,
-		.archive-list {
-			padding-right: 1rem;
-		}
-
-		.divider {
-			border-right: 1px solid $border-color;
-		}
 	}
 }

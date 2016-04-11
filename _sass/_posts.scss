@@ -2,6 +2,10 @@
 
 .post-content {
 	margin-bottom: 2.5rem;
+
+	@include media-query($bp-larger-than-tablet) {
+		margin-left: 2.5rem;
+	}
 }
 
 .post-footer {
@@ -15,11 +19,5 @@
 		&:hover {
 		color: darken($accent-color, 5%);
 		}
-	}
-}
-
-@include media-query($bp-larger-than-tablet) {
-	.post-content {
-		margin-left: 2.5rem;
 	}
 }

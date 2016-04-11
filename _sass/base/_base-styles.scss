@@ -9,11 +9,15 @@ html {
 }
 
 body {
-  font-size: 1.5em; // currently ems cause chrome bug misinterpreting rems on body element
+  font-size: 1.7em; // currently ems cause chrome bug misinterpreting rems on body element
   line-height: 1.6;
   font-weight: 400;
   font-family: $base-font;
   color: $font-color;
+
+  @include media-query($bp-larger-than-phablet) {
+    font-size: 1.6em;
+  }
 }
 
 // Links
@@ -45,6 +49,13 @@ hr {
   border-top: 1px solid $light-grey;
 }
 
+dt {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
 dd {
-    margin-bottom: 2.5rem;
+  display: inline;
+  padding: 0.5rem;
+  background: lighten($light-grey, 5%);
 }

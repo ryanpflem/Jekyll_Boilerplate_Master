@@ -1,73 +1,69 @@
-.menu-site-title {
-       
-    a {
-        font-weight: 500;
-        font-size: 3.25rem;
-        text-shadow: .1em .1em rgba(0, 0, 0, 0.3);
-    }
+.menu-site-title { 
+	@include media-query($bp-larger-than-tablet) {
+		padding: 0;
+		float: left;
+	}
 
-    a:hover {
-        background-color: transparent; 
-        text-decoration: none;
-        color: $accent-color;
-    }
+	a {
+			font-weight: 500;
+			font-size: 3.25rem;
+			text-shadow: .1em .1em rgba(0, 0, 0, 0.3);
+
+			@include media-query($bp-larger-than-tablet) {
+				padding: 0;
+			}
+	}
+
+	a:hover {
+			background-color: transparent; 
+			text-decoration: none;
+			color: $accent-color;
+	}
 }
 
 nav {
-    margin: 2rem 0;
-    text-align: center;
+	margin: 2rem 0;
+	text-align: center;
 
-    ul {
-        padding: 0;
-        margin: 0 auto;
-        list-style: none;
-    }
+	@include media-query($bp-larger-than-tablet) {
+		border-bottom: 1px solid $border-color;
+	}
 
-    li {
-        padding: 0;
-        margin: 0 auto;
-        display: block;
-        border-bottom: 1px solid $border-color;
-    }
+	ul {
+			padding: 0;
+			margin: 0 auto;
+			list-style: none;
+	}
 
-    li a {
-        display: block;
-        padding: 1.5rem;        
-        color: $dark-grey;
-        font-size: 175%;
-    }
+	li {
+			padding: 0;
+			margin: 0 auto;
+			display: block;
+			border-bottom: 1px solid $border-color;
 
-    li:hover a {
-        color: $white;
-        background: $link-color;        
-        text-decoration: none;
-    }
-}
+			@include media-query($bp-larger-than-tablet) {
+				display: inline;
+				padding: 1rem;
+				border: none;
+		}
+	}
 
-@include media-query($bp-larger-than-tablet) {
+	li a {
+			display: block;
+			padding: 1.5rem;        
+			color: $dark-grey;
+			font-size: 175%;
 
-    .menu-site-title {        
-        padding: 0;
-        float: left;
+			@include media-query($bp-larger-than-tablet) {
+				display: inline-block;
+				padding: 1rem;
+				font-size: 150%;
+		}
+	}
 
-        a {
-            padding: 0;
-        }
-    }
-
-    nav {
-        border-bottom: 1px solid $border-color;
-        
-        li {            
-            display: inline;
-            padding: 1rem;
-            border: none;
-        }        
-
-        li a {
-            display: inline-block;
-            padding: 1rem;
-            font-size: 150%;
-        }        
-    }
+	li:hover a {
+			color: $white;
+			background: $link-color;        
+			text-decoration: none;
+	}
 }
