@@ -11,7 +11,7 @@
 	{% if site.owner.bing-verify %}<meta name="msvalidate.01" content="{{ site.owner.bing-verify }}">{% endif %}
 
 	
-	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl }}">
+	<link rel="canonical" href="{{ page.url | prepend: site.baseurl }}">
 	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl }}">
 	
 	<!-- Favicon -->
