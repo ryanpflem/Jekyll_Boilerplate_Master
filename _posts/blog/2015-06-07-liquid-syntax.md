@@ -5,6 +5,7 @@ date: 2015-06-07
 categories: blog
 tags: [liquid, jekyll, templates]
 ---
+
 Jekyll uses the [Liquid](http://liquidmarkup.org/ "liquid") template language to control the logic of templates and assemble pages dynamically. To get the most out of Jekyll, and to build effective templates you need to understand the basics of how Liquid works. In this post we’ll cover the basics of Liquid syntax so that as you begin to author templates, you’ll have a greater understanding of Jekyll’s capabilities and how Liquid can help you build more powerful sites.
 
 Liquid was created in 2006 as a Ruby template language for the ecommerce site [Shopify](https://docs.shopify.com/themes/liquid-documentation/basics "Shopify themes"). It remains an integral part of Shopify, but has been spun off for general use as well. 
@@ -13,7 +14,7 @@ Liquid uses a combination of **tags**, **objects**, and **filters** to load and 
 
 There are two basic types of markup in Liquid, **output** and **tags**. Output writes content to the page while tags perform some type of function, like looping through an array. Let’s explore output markup first.
 
-###Output
+### Output
 
 Output writes content to the page. Output tags start with two curly braces, contain the content to be written to the page, and then end with two curly braces. Here’s an example:
 
@@ -59,7 +60,7 @@ It’s also possible to use more than one filter at a time. Here are a few of th
 
 Filters are an incredibly powerful way to transform content within your templates. It’s important to understand how they work, and what their capabilities are, so that you can format content correctly as well as generate the desired output. For a full list of available filters and how they work, check out the [filter documentation](https://docs.shopify.com/themes/liquid-documentation/filters "filters") on the Shopify site.
 
-###Tags
+### Tags
 
 Liquid tags are functional, when applied they perform some type of action. They provide the basic programming logic for templates and allow you to build intelligent templates that can respond to a number of different factors. Tags are written with a curly brace followed by a percentage sign (*%*), contain the desired instructions, and end with a percentage sign and a curly brace. Tags usually come in twos, with an opening tag and a closing tag that wraps the targeted content. Here’s an example:
 
@@ -75,7 +76,7 @@ Tags are organized in four distinct categories; Control Flow, Iteration, Theme, 
 
 Here’s a sample of some of the more commonly used tags in templates:
 
-###for loops
+### for loops
 
 {% highlight liquid %}
     {{"{% for post in site.posts "}}%}
@@ -87,7 +88,7 @@ Here’s a sample of some of the more commonly used tags in templates:
 
 Loops over collections, executing code for as long as the conditions within the loop lasts. In this example Jekyll would loop through all posts in the site and for each one create a list item that contains a link to that specific post via its URL and title. Note the use of output tags within the **for** loop.
 
-###if/else statements
+### if/else statements
 
 {% highlight liquid %}
   {{"{% if paginator.previous_page "}}%}
@@ -99,7 +100,7 @@ Loops over collections, executing code for as long as the conditions within the 
 
 Allows the application of conditional logic within templates. In this example Jekyll would check to see if there are any posts older than the current one using the **paginator** object. If so, a link would be created to the previous posts. If not a message is created stating that there are no previous posts. There are many variations on the if/else statements syntax including `elseif`, `unless`, and `case` statements. 
 
-###includes
+### includes
 
 {% highlight liquid %}
   {{"{% include footer.html "}}%}
@@ -107,7 +108,7 @@ Allows the application of conditional logic within templates. In this example Je
 
 Inserts the included content at the desired location. In this example the contents of the file “footer.html” would be inserted at the location of the tag. Allows for the dynamic insertion of content.
 
-###variables
+### variables
 
 {% highlight liquid %}
   {{"{% assign author = 'james' "}}%}

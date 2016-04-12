@@ -15,7 +15,9 @@ Jekyll supports multiple Markdown rendering engines and allows you to specify wh
 To specify a rendering engine, simply add this line to your **_config,yml** file:
 
 ~~~~~~~
+
 markdown: kramdown
+
 ~~~~~~~
 
 For the most part, the rendering engines are the same, although they do have subtle differences in syntax and element support. Currently Kramdown is the default Markdown renderer for Jekyll. Let’s take a look at some basic Kramdown syntax.
@@ -23,7 +25,8 @@ For the most part, the rendering engines are the same, although they do have sub
 The following passage:
 
 ~~~~~~
-#My main heading
+
+# My main heading
 {: .intro }
 
 This is my initial paragraph. In it I’d like to provide a link to the [Jekyll homepage](http://jekyllrb.com/ "Jekyll"). I want to add **bold** and *italic* formatting to text as well using the `strong` and `emphasis` tags.
@@ -51,7 +54,7 @@ Would be rendered in HTML as:
 
 As you can see, Markdown frees you from many of the structural restraints that would make it difficult to author something like a blog post using HTML. To write two paragraphs, for example, you simply write two paragraphs, no <p> tags or special formatting required. Let’s take a quick look at how to format some of the basic HTML elements in Kramdown.
 
-###Paragraphs
+### Paragraphs
 
 Consecutive lines of text are formatted as a single paragraph. As a block level element, you must to add a blank line after it to separate it from other block-level elements.
 
@@ -68,16 +71,18 @@ Renders as:
 <p>This is as well.</p>
 {% endhighlight %}
 
-###Headings
+### Headings
 
 There are multiple ways to format headings in Kramdown. The easiest is to preceed the heading with hash characters (**#**) equal to the heading level. An `h1` for example, would be written as `#heading 1`. 
 
 ~~~~~~~
+
 # This is a heading 1
 
 ## This is a heading 2
 
 ### This is a heading 3
+
 ~~~~~~~
 
 Renders as:
@@ -88,12 +93,14 @@ Renders as:
 <h3>This is a heading 3</h3>
 {% endhighlight %}
 
-###Blockquotes
+### Blockquotes
 
 Blockquotes are formatted using the “greater than” character (**>**) at the start of the blockquote. Text inside a blockquote is wrapped with a paragraph. 
 
 ~~~~~~~
+
 > This is a blockquote.
+
 ~~~~~~~
 
 Renders as:
@@ -104,17 +111,19 @@ Renders as:
 </blockquote>
 {% endhighlight %}
 
-###Ordered Lists
+### Ordered Lists
 
 To create an ordered list, simply type a list started by a number followed by a period. Each list item should be on a separate line. Nested lists are created by indenting a list underneath an existing list item.
 
 ~~~~~~~
+
 1. This is the first item
 2. This is the second item
 3. This is the third item
     1. This is a nested list
     2. More nested list
 4. This is the fourth item.
+
 ~~~~~~~
 
 Renders as:
@@ -133,13 +142,15 @@ Renders as:
 </ol>
 {% endhighlight %}
 
-###Block-level attributes
+### Block-level attributes
 
 Often you may wish to assign attributes to block-level elements. To do this, follow the element with a *block inline attribute list* (block IAL). A block IAL consists of a left curly brace, followed by a colon, the attribute definitions and a right curly brace. 
 
 ~~~~~~~
+
 # Apply the class “main” to this heading
 {: .main}
+
 ~~~~~~~
 
 Renders as:
@@ -151,8 +162,10 @@ Renders as:
 Classes are applied with the syntax `.className` and IDs with `#ID-name`. For any other attribute you simply write the desired syntax:
 
 ~~~~~~~
+
 # Another heading with the ‘role’ attribute applied
 {: role="banner"}
+
 ~~~~~~~
 
 Renders as:
@@ -165,8 +178,10 @@ Renders as:
 For multiple attributes, create a space-separated list inside the blockIAL.
 
 ~~~~~~~
+
 # This heading has two classes and one ID applied
 {: .class1 .class2 #ID-1}
+
 ~~~~~~~
 
 Renders as:
@@ -175,12 +190,14 @@ Renders as:
 <h1 class="class1 class2" id="ID-1">This heading has two classes and one ID applied</h1>
 {% endhighlight %}
 
-###Inline formatting
+### Inline formatting
 
 Emphasis can be added to text by surrounding the text with either asterisks or underscores. This will result in wrapping the content in either the `strong` or `emphasis` tag depending upon how many are used:
 
 ~~~~~~~
+
 I want to wrap **this text** in a strong tag and *this text* in an emphasis tag.
+
 ~~~~~~~
 
 Renders as:
@@ -189,12 +206,14 @@ Renders as:
 <p>I want to wrap <strong>this text</strong> in a strong tag and <em>this text</em> in an emphasis tag.</p>
 {% endhighlight %}
 
-###Links
+### Links
 
 You can create a link by surrounding the text with square brackets and then directly following it with the link URL in parentheses. To add a title attribute, add the desired title in straight quotes (" ") after the link URL.
 
 ~~~~~~~
+
 I usually search using [Google](https://www.google.com "Google").
+
 ~~~~~~~
 
 Renders as:
@@ -203,12 +222,14 @@ Renders as:
 <p>I usually search using <a href="https://www.google.com" title="Google">Google</a>.</p>
 {% endhighlight %}
 
-###Images
+### Images
 
 Images are similar to links, but use an exclamation mark before the square brackets. The link text will become the alternative text of the image and the link URL specifies the image source.
 
 ~~~~~~~
+
 ![My dog](/images/Baxter.jpg)
+
 ~~~~~~~
 
 Renders as:
