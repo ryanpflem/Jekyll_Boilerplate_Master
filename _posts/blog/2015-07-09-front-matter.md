@@ -5,6 +5,7 @@ date: 2015-07-09
 categories: blog
 tags: [jekyll, web design, yaml]
 ---
+
 YAML front matter is perhaps the most important aspect of creating sites through Jekyll. It allows you to control how Jekyll processes and builds pages, create page-specific variables, and triggers file processing. Let’s take a closer look at front matter and how it can help you create more efficient Jekyll sites.
 
 The front matter must be the first item in a file and must take the form of valid YAML set between triple-dashed lines. Here is a basic example:
@@ -87,4 +88,3 @@ Jekyll provides built-in support for Sass and CoffeeScript, but won’t process 
 ~~~~~~~
 
 The files will then be processed, and the resulting file will be located in the same directory in the generated site. The file **css/layout.scss** would generate **css/layout.css** in the finished site.
-

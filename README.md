@@ -16,7 +16,7 @@ A simple, responsive, boilerplate for your Jekyll powered blog using [Skeleton](
 * Basic [search capabilities](https://github.com/mathaywarduk/jekyll-search)
 * Support for Disqus Comments
 
-See a [live version](http://) hosted on GitHub.
+See a [live version](http://ryanpflem.github.io/Skekyll) hosted on GitHub.
 
 ---
 

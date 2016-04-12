@@ -5,6 +5,7 @@ date: 2015-03-11
 categories: blog
 tags: [jekyll, web design, terminal]
 ---
+
 Getting started with Jekyll is relatively simple, although perhaps not *quite* as simple as their documentation would have you believe. There are a number of dependencies and requirements you have to satisfy before installing and using Jekyll. Let’s explore those dependencies and talk about the process of getting started with Jekyll.
 
 First, let’s cover what you’ll need to have installed before you can run Jekyll. As Jekyll is a Ruby app it helps if you’re on a Unix, Linux, or OS X system. According to Jekyll you *can* get Jekyll to run on Windows, it just requires some work. I’ve never tried it, but [you can read more about the process here](http://jekyll-windows.juthilo.com/ "jekyll for windows") if you’re interested.

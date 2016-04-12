@@ -20,6 +20,7 @@ title: Blog
   <div class="eight columns">
     <h2 class="">Recent Posts</h2>
     <ul class="post-list">
+    {% if page.paginator %}{% assign paginator = page.paginator %}{% endif %}
     {% for post in paginator.posts %}
       <article role="article" itemscope itemtype="http://schema.org/BlogPosting">
         <li>
