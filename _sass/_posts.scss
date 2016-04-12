@@ -1,0 +1,23 @@
+// Styles specific to posts
+
+.post-content {
+	margin-bottom: 2.5rem;
+
+	@include media-query($bp-larger-than-tablet) {
+		margin-left: 2.5rem;
+	}
+}
+
+.post-footer {
+
+	p {
+		font-weight: 500;
+	}
+
+	a {
+		color: $accent-color;
+		&:hover {
+		color: darken($accent-color, 5%);
+		}
+	}
+}

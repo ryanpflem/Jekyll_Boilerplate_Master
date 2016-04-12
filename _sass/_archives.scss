@@ -1,0 +1,69 @@
+// Styles specific to Archive page
+
+.tag-cloud {
+	margin-bottom: 2.5rem;
+	
+	i {
+		padding: 4px 6px;
+		font-size: 75%;
+	}
+	
+	ul {
+		list-style: none;
+	  margin: 0 auto;
+	  padding: 4px 0;
+	  overflow: hidden;
+	}
+
+  li {
+  	float: left;
+    font-size: 1.5rem;    
+    margin-bottom: 1.5rem;
+    line-height: 2.5;
+  }
+
+  a {
+  	font-weight: 500;
+  	padding: 4px 6px;
+    margin: 2px;
+    background-color: $light-grey;
+    color: $accent-color;
+    border-radius: 4px;
+    text-decoration: none;
+    border-bottom: 1px dotted $dark-grey;
+  }
+}
+
+.tag-list	{	
+	li{
+		list-style: none;
+	}
+
+	.post-date {
+		display: none;
+
+		@include media-query($bp-larger-than-phablet) {
+			display: inline-block;
+	    float: right;
+	    color: $secondary-color;
+	  }
+	}
+}
+
+.return {	
+	margin-top: 2rem;
+	// display: none;
+
+	a {		
+		text-decoration: none;
+		color: $accent-color;
+	}
+	a:before {
+		font-family: FontAwesome;
+		content: '\f077\0020';
+	}
+}
+
+// h3:target + .tag-list .return {
+// 	display: block;
+// }

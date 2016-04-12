@@ -1,0 +1,8 @@
+_site
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+node_modules
+.sass-cache
+<<<<<<< HEAD
+.jekyll-metadata

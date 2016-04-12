@@ -1,0 +1,31 @@
+---
+sitemap: false
+---
+@charset "utf-8";
+
+/*
+   Global
+   ========================================================================== */
+
+@import "base/base";
+
+/*
+   Vendor
+   ========================================================================== */
+
+@import "vendor/font-awesome/font-awesome"; /* Font Awesome icons */
+@import "vendor/magnific-popup/magnific-popup"; /* Magnific Popup lightbox */
+
+/*
+   Components
+   ========================================================================== */
+
+@import "modules/modules";
+
+/*
+   Page specific
+   ========================================================================== */
+
+@import "pages"; /* layout and styles that apply to pages only */
+@import "posts"; /* layout and styles that apply to posts only */
+@import "archives"; /* archive pages (post/tag lists, etc) */

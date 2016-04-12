@@ -1,0 +1,233 @@
+// Styles specific to pages
+// -----------------------------------------------
+
+.site-header {
+	margin-bottom: 2rem;
+
+	@include media-query($bp-larger-than-tablet) {
+		padding: 2rem;
+	}
+}
+
+.all-page-content {
+		margin-bottom: 2rem;
+}
+
+.page-title {
+	font-weight: 500;
+	text-shadow: .1em .1em rgba(0, 0, 0, 0.3);
+}
+
+.page-content {	
+	margin-bottom: 2rem;
+
+	@include media-query($bp-larger-than-tablet) {
+		margin-left: 2.5rem;
+	}
+}
+
+.home,
+.blog {
+	.column,
+	.columns {		
+		float: none;
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	.site-title {
+		font-weight: 500;
+		text-shadow: .1em .1em rgba(0, 0, 0, 0.3);
+	}
+
+	.archive-list {	
+		list-style: none;
+		margin: 0 auto;
+		padding: 4px 0;
+		overflow: hidden;
+
+		  li { 
+		  	float: left;
+		    font-size: 1.5rem;
+		    margin-bottom: 1.5rem;
+		    line-height: 2.5;
+		  }
+
+		  a { 
+		  	font-weight: 500;
+		  	padding: 4px 6px;
+		    margin: 2px;
+		    background-color: $light-grey;
+		    color: $accent-color;
+		    border-radius: 4px;
+		    text-decoration: none;
+		    border-bottom: 1px dotted $dark-grey;
+		  }
+	}
+
+	@include media-query($bp-larger-than-tablet) {
+		.column,
+		.columns {			
+			float: left;
+		}
+
+		.archive-list {	
+			li {
+				float: none;
+			}			
+		}
+
+		.four {
+			width: grid-column-width(4);
+		}
+
+		.eight {
+			margin-left: 4%;
+			width: grid-column-width(8);
+		}
+
+		.site-title,
+		.site-tagline,
+		.archive-list {
+			padding-right: 1rem;
+		}
+
+		.divider {
+			border-right: 1px solid $border-color;
+		}
+	}
+}
+
+// Pagination Link Styles
+// -----------------------------------------------
+
+.post-list {
+
+	li {
+		list-style: none;
+	}
+
+	footer > p {
+		font-weight: 500;
+
+		> a {
+			color: $accent-color;
+			&:hover {
+			color: darken($accent-color, 5%);
+			}
+		}
+	}
+}
+
+.pagination {
+	width: 100%;
+	font-size: 1.2em;
+
+	a {
+		color: $accent-color;
+		width: 50%;
+		&:hover {
+			color: darken($accent-color, 5%);
+		}
+	}
+}
+
+.prevLink {
+	position:relative;
+	float: left;	
+}
+
+.nextLink {
+	float: right;	
+	text-align: right;
+}
+
+.previous:before {
+	font-family: FontAwesome;
+	content: '\f177\0020';
+}
+
+.next:after {
+	font-family: FontAwesome;
+	content: '\0020\f178';	
+}
+
+// Page footer styles
+// -----------------------------------------------
+
+.site-footer {
+	margin: 0 auto;
+	padding: 2rem;	
+	background: $dark-grey;
+
+	li {
+		list-style: none;
+	}
+	p,
+	span {
+		color: $white;
+	}
+}
+
+.footer-heading {
+	color: $white;
+
+	i {
+		padding: 4px 6px;
+		font-size: 75%;
+	}
+}
+
+.contact {
+	margin: 1rem;
+}
+
+.social-icons {
+	margin: 1rem;
+	text-align: center;
+
+	i {
+		color: $accent-color;
+		padding: 4px 6px;
+		&:hover {
+			color: darken($accent-color, 5%);
+		}
+	}
+}
+
+.copyright{
+	margin: 1rem;
+}
+
+@include media-query($bp-larger-than-phablet) {
+	.footer-menu {
+		float: right;
+	}
+}
+
+// Custom 404 styles
+// -----------------------------------------------
+
+.search-goog {
+	list-style: none;
+
+	form {
+		margin-top: 2.5rem;
+	}
+
+	input#goog-wm-qt {
+		margin-right: 1rem;
+	}
+
+	input#goog-wm-sb {
+		color: #fff;
+    background-color: $primary-color;
+    border-color: $primary-color;
+
+    &:hover {
+    	color: #fff;
+		  background-color: $link-color;
+		  border-color: $link-color;
+    }
+	}
+}
