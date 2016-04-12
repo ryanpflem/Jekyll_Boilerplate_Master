@@ -30,6 +30,12 @@ gems:
   - jekyll-gist
   - jekyll-paginate
 
+whitelist:
+  - jekyll-paginate
+  
+safe: true
+lsi: false
+
 kramdown:
   auto_ids: true
   footnote_nr: 1
