@@ -29,11 +29,9 @@ gems:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-paginate
-  - jekyll-paginate-category
 
 whitelist:
   - jekyll-paginate
-  - jekyll-paginate-category
   
 safe: true
 lsi: false
